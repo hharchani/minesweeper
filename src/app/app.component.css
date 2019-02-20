@@ -1,0 +1,67 @@
+.tile {
+  height: 40px; 
+  width: 40px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-weight: bold;
+  cursor: default;
+  user-select: none;
+}
+
+.light {
+  background-color: #aad751;
+}
+
+.dark {
+  background-color: #a2d149;
+}
+
+.open.light {
+  background-color: #e5c29f;
+}
+
+.open.dark {
+  background-color: #e5c29f;
+}
+
+.open.number1 {
+  color: #1976d2;
+}
+
+.open.number2 {
+  color: #388e3c;
+}
+
+.open.number3 {
+  color: #d32f2f;
+}
+
+.open.number4 {
+  color: #7b1fa2;
+}
+
+.danger {
+  color: red;
+}
+
+.game-stats {
+  color: #fff;
+  width: 50%;
+  margin: auto;
+  display: flex;
+}
+
+.flags-count {
+  flex: 1;
+}
+
+.timer {
+  flex: 1;
+  text-align: right;
+}
+
+.game-result {
+  text-align: center;
+  color: #fff;
+}

@@ -56,11 +56,12 @@ export class GameService {
       return false;
     }
     let bombsPlaced = 0;
+    const noBombs = this.getNeighbours(tileClicked).concat([tileClicked]);
     while (bombsPlaced < this.bombs) {
       let x = Math.floor(Math.random() * this.rows);
       let y = Math.floor(Math.random() * this.columns);
       const tile: Tile = this.board[x][y];
-      if (tile == tileClicked) {
+      if (noBombs.includes(tile)) {
         continue;
       }
       if (tile.isBomb) {
